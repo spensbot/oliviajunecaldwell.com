@@ -81,7 +81,7 @@ const Navbar = class extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>
+                <span style={{fontSize: '0.7rem'}}>
                   made by brother spense
                 </span>
               </a>
