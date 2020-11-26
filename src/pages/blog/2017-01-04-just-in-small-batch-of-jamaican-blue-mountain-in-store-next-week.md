@@ -13,6 +13,8 @@ tags:
 ---
 It's Pretty nice
 
+![Sliding Piano Desk](/img/piano-desk.jpg "My Bro Has a cool desk")
+
 ## As you should know
 
 It's as my brother says
