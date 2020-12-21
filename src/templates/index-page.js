@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({
       <div style={{width: "100%", height: '30rem', maxHeight: '50vh'}}>
         <img alt="Olivia June Caldwell Portrait" src={Olivia} style={{objectFit: "cover", width:"100%", height:"100%"}}/>
       </div>
-      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '1rem 0'}}>
+      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '1rem 0 4rem 0'}}>
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
         >

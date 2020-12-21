@@ -32,19 +32,16 @@ export default class BlogIndexPage extends React.Component {
           <img src={siblings} alt="siblings" ></img>
           <h1
               style={{
-                padding: '2rem 0 0 0',
-                fontSize: '2.5rem'
+                padding: '2rem 0',
+                fontSize: '2.2rem',
+                fontWeight: 'bold'
               }}
             >
             Latest Stories
           </h1>
-          <section className="section">
-            <div className="container">
-              <div className="content">
-                <BlogRoll />
-              </div>
-            </div>
-          </section>
+          <div className="content">
+            <BlogRoll />
+          </div>
         </Container>
       </Layout>
     )
