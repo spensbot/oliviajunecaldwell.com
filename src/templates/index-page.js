@@ -17,61 +17,22 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-        marginBottom: '2rem'
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        <div
-          style={{
-            // boxShadow: '2px 2px 10px 2px rgba(0,0,0,0.46)',
-            // backgroundColor: '#ba41f2',
-            backgroundColor: '#fff',
-            color: '#222',
-            lineHeight: '1',
-            display: 'flex',
-            flexWrap: 'wrap'
-          }}
-        >
-          <img alt="Olivia June Caldwell Portrait" src={Olivia} style={{objectFit: "cover", width:"20rem", height:"20rem", margin: "auto"}}/>
-          <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '1rem 0', maxWidth: '100%'}}>
-            <h1
-              className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-              style={{
-                padding: '0.5em'
-              }}
-            >
-              {title}
-            </h1>
-            <h3
-              className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-              style={{
-                padding: '1em'
-              }}
-            >
-              {subheading}
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
     <Container maxWidth="950px">
+      <div style={{width: "100%", height: '30rem', maxHeight: '50vh'}}>
+        <img alt="Olivia June Caldwell Portrait" src={Olivia} style={{objectFit: "cover", width:"100%", height:"100%"}}/>
+      </div>
+      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '1rem 0'}}>
+        <h1
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+        >
+          {title}
+        </h1>
+        <h3
+          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+        >
+          {subheading}
+        </h3>
+      </div>
       <div className="content">
         <div className="content">
           <div className="tile">
