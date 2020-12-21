@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import Container from '../components/Container'
+import Olivia from '../img/Olivia-portrait.jpg'
 
 export const IndexPageTemplate = ({
   image,
@@ -24,6 +25,7 @@ export const IndexPageTemplate = ({
         })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
+        marginBottom: '2rem'
       }}
     >
       <div
@@ -38,80 +40,76 @@ export const IndexPageTemplate = ({
       >
         <div
           style={{
-            boxShadow: '2px 2px 10px 2px rgba(0,0,0,0.46)',
+            // boxShadow: '2px 2px 10px 2px rgba(0,0,0,0.46)',
             // backgroundColor: '#ba41f2',
-            backgroundColor: '#fffc',
+            backgroundColor: '#fff',
             color: '#222',
             lineHeight: '1',
-            padding: '0.25em',
+            display: 'flex',
+            flexWrap: 'wrap'
           }}
         >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            padding: '0.5em'
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            padding: '1em'
-          }}
-        >
-          {subheading}
-        </h3>
-        </div>
-      </div>
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <img alt="Olivia June Caldwell Portrait" src={Olivia} style={{objectFit: "cover", width:"20rem", height:"20rem", margin: "auto"}}/>
+          <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '1rem 0', maxWidth: '100%'}}>
+            <h1
+              className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+              style={{
+                padding: '0.5em'
+              }}
+            >
+              {title}
+            </h1>
+            <h3
+              className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+              style={{
+                padding: '1em'
+              }}
+            >
+              {subheading}
+            </h3>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <Container maxWidth="950px">
+      <div className="content">
+        <div className="content">
+          <div className="tile">
+            <h1 className="title">{mainpitch.title}</h1>
+          </div>
+          <div className="tile">
+            <h3 className="subtitle">{mainpitch.description}</h3>
+          </div>
+        </div>
+        <div className="columns">
+          <div className="column is-12">
+            <h3 className="has-text-weight-semibold is-size-2">
+              {heading}
+            </h3>
+            <p>{description}</p>
+          </div>
+        </div>
+        {/* <Features gridItems={intro.blurbs} />
+        <div className="columns">
+          <div className="column is-12 has-text-centered">
+            <Link className="btn" to="/products">
+              See all products
+            </Link>
+          </div>
+        </div> */}
+        <div className="column is-12">
+          <h3 className="has-text-weight-semibold is-size-2">
+            Latest stories
+          </h3>
+          <BlogRoll />
+          <div className="column is-12 has-text-centered">
+            <Link className="btn" to="/blog">
+              Read more
+            </Link>
+          </div>
+        </div>
+      </div>
+    </Container>
   </div>
 )
 

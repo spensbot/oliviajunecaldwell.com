@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Olivia June Caldwell . com
+title: OliviaJuneCaldwell .com
 image: /img/cool-sky.jpg
 heading: I'm A Rootin' Tootin' Cowgirl
 subheading: A Heckin' Good Blog By A Heckin' Good Girl

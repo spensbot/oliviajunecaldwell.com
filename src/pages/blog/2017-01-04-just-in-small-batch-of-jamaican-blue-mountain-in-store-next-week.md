@@ -13,7 +13,7 @@ tags:
 ---
 It's Pretty nice
 
-![Sliding Piano Desk](/img/piano-desk.jpg "My Bro Has a cool desk")
+![My fam on the hill](/img/img_20200517_204604.jpg "My cool fam doing our cool stuff")
 
 ## As you should know
 

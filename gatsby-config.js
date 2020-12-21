@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Olivia's Blog",
     description:
-      'A blog by olivia june caldwell about live, love, travel, and the pursuit of naps and stuff',
+      'A blog by olivia june caldwell about life, love, travel, and the pursuit of naps and stuff',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
